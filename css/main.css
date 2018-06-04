@@ -1,0 +1,465 @@
+/*----------------------------------------------------
+	1. CSS Reset
+------------------------------------------------------*/
+* {
+	padding:0;
+	margin:0;
+}
+html { font-size: 100%; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+	text-rendering: optimizelegibility; 
+}
+body {
+	color:#888089;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+	font-weight: 400;
+	position:relative;
+	background:#ffffff;
+	width:100%;
+	height:100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+ul li{
+	
+}
+.container{
+	margin-left: 10vw;
+    margin-right: 10vw;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.col-one{
+	width:100%;
+}
+.col-two{
+	width:50%;
+}
+.col-three{
+	width:33%;
+}
+.col-two-three{
+	width:66%;
+}
+.col-four{
+	width:25%;
+}
+.col-three-four{
+	width:75%;
+}
+.col-five{
+	width:20%;
+}
+.col-two-five{
+	width:40%;
+}
+.col-three-five{
+	width:60%
+}
+.col-four-five{
+	width:80%;
+}
+.col-six{
+	width:16.5%;
+}
+.col-container {
+    display: table;
+    width: 100%;
+	text-align: end;
+}
+.t-logo {
+    display: inline-block;
+    margin: 1vw;
+	transition-duration: 2s;
+}
+.t-logo:hover{
+	transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+}
+.t-logo img {
+    width: 100px;
+}
+a {
+	text-decoration:none;
+	color:#fff;
+	outline:none;
+}
+img {
+	max-width:100%;
+}
+p{
+	padding-bottom:33px;
+	margin:0px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	color:#000;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size:33px;
+	line-height:76px;
+	font-weight:400;
+	margin:0px;
+	padding-bottom:8px;
+}
+h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size:29px;
+	color:#372d38;
+	line-height:57px;
+	padding-bottom:10px;
+	font-weight:400;
+	text-transform:uppercase;
+	margin:0px;
+}
+h3{
+	font-family: 'Crimson Text', serif;
+	font-style:italic;
+	font-size:27px;
+	line-height:30px;
+	padding-bottom:10px;
+	font-weight:300;
+	margin:0px;
+}
+h4{
+	font-family: 'Montserrat', sans-serif;
+	font-size:21px;
+	line-height:24px;
+	padding-bottom:10px;
+	font-weight:400;
+	margin:0px;
+}
+h5{
+	font-family: 'Montserrat', sans-serif;
+	font-size:17px;
+	color:#372d38;
+	line-height:24px;
+	padding-bottom:10px;
+	font-weight:400;
+	margin:0px;
+}
+
+.heading{
+	text-align:center;
+	padding-bottom:70px;
+}
+.heading .container{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.heading h2 {
+	font-size:19px;
+	line-height:40px;
+	font-weight:400;
+	margin-bottom:20px;
+	letter-spacing:2px;
+	display:inline-block;
+	position:relative;
+}
+.heading h2:after {
+	content:"";
+	display:block;
+	width:76px;
+	height:2px;
+	background:#5b4c5c;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	margin-left:-38px;
+}
+.heading h3{
+	font-size:18px;
+	line-height:30px;
+	color:#5b4c5c;
+	padding-bottom:0;
+	font-weight:300;
+	text-transform:none;
+	letter-spacing:1px;
+}
+.heading p{
+	line-height:25px;
+}
+
+/*----------------------------------------------------
+	3. Header Part
+------------------------------------------------------*/
+header{
+	position:relative;
+}
+.banner{
+	overflow:hidden ;
+	margin:0 auto !important;
+	background:#CACACA;
+}
+
+.bannerText{
+	width:100%;
+	position:absolute ;
+	left:0;
+	top:50%;
+	text-align:center;
+	margin-top:-35px;
+	padding:0 ;
+	z-index:999 ;
+}
+.bannerText h1{
+	font-size: 4rem;
+	text-transform:uppercase;
+	line-height:normal;
+	font-weight:300;
+	color:#fff;
+	letter-spacing:4px;
+}
+.bannerText h3{
+	color:#fff;
+	font-size:19px;
+	line-height:normal;
+	font-weight:400;
+	text-transform:none;
+	margin-bottom:20px;
+	letter-spacing:2px;
+}
+
+/*----------------------------------------------------
+	4. About me Style
+------------------------------------------------------*/
+.aboutus{
+	background:#ffffff;
+	text-align:left;
+}
+.aboutus .container{
+	padding-top:80px ;
+	padding-bottom:47px ;
+}
+.aboutus img {
+	padding:7px;
+	display:block;
+	box-shadow: 25px 30px 55px #cacaca;
+}
+.aboutus .heading p{
+	padding-bottom:41px;
+}
+.aboutus h4 {
+	font-size:16px;
+	color:#5b4c5c;
+	padding-bottom:20px;
+}
+
+/*----------------------------------------------------
+	5. Skill & Expert Style
+------------------------------------------------------*/
+.skillset {
+	background:#f8f8f8;
+}
+.skillset .container{
+	padding-top:66px ;
+	padding-bottom:64px ;
+}
+
+/*----------------------------------------------------
+	6. Work Experience Style
+------------------------------------------------------*/
+
+.myexperties {
+	background:#fff;
+}
+.myexperties .container{
+	padding-top:67px ;
+}
+.expertiesico {
+	padding:3rem 1rem;
+	text-align:center;
+	font-family:'Crimson Text',serif;
+	font-size:21px;
+	line-height:24px;
+	color:#5b4c5c;
+	font-style:italic;
+}
+.expertiesdesc {
+	border-left:2px solid #ada5ad;
+	padding:0 0 0 69px;
+	margin-bottom:100px;
+}
+.expertiesdesc p {
+	padding-bottom:0;
+}
+.expertiesdesc h4 {
+	font-size:14px;
+	font-weight:300;
+	color:#UIzards;
+	line-height:normal;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+.expertiesdesc h5 {
+	font-family: 'Crimson Text', serif;
+	color:#5b4c5c;
+	font-size:18px;
+	font-style:italic;
+	font-weight:400;
+}
+
+
+/*----------------------------------------------------
+	 8. Protfolio Style
+------------------------------------------------------*/
+.protfolio{
+	width:100%;
+}
+.protfolio .container{
+	padding-top:67px ;
+	padding-bottom:0 ;
+}
+.protfolio .heading {
+	padding-bottom:50px;
+}
+.protfolio .protBox{
+	padding-top:0 ;
+	padding-bottom:0 ;
+	position:relative;
+}
+
+.protfolio .heading p{
+	padding-bottom:41px;
+	color:#242424
+}
+.protfolio h4{
+	font-weight:700;
+}
+ul.portfolioContainer{
+	display:table;
+	padding:0px;
+	margin-bottom:0;
+	list-style-type:none;
+}
+ul.portfolioContainer li{
+	display:table-cell;
+	height:auto;
+	padding:0px;
+	margin:0px;
+	cursor:pointer;
+	border:1px solid #fff;
+	width:49.7%;
+}
+ul.portfolioContainer li .lightCon{
+	display:block;
+	margin:0px;
+	position:relative;
+	overflow:hidden;
+}
+
+span.hoverBox{
+	visibility:hidden;
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+	
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	
+	background: rgba(255, 255, 255, 0.9);
+	
+}
+ul.portfolioContainer li:hover span.hoverBox{
+	visibility:visible;
+	left:0px;
+	bottom: 0px;
+	
+	background: rgba(255, 255, 255, 0.9);
+	
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+span.hoverBox a{
+	line-height:54px;
+	color: #372d38;
+	border: 1px solid #372d38;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span.hoverBox .smallIcon{
+	width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+/*----------------------------------------------------
+	 10. Footer Style
+------------------------------------------------------*/
+.footer{
+	background:#f8f8f8;
+}
+.footer .container{
+	padding:84px 0 0;
+}
+
+.footer ul{
+	margin:0 auto;
+	margin-bottom:62px;
+	text-align:center;
+	list-style-type:none;
+}
+.footer ul li{
+	display:inline-block;
+	text-align:center;
+	background:#bebabe;
+	color:#ffffff;
+	line-height:55px;
+	margin:0 17px 14px;
+	width:55px;
+	height:55px;
+	
+	-webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.footer ul li:hover{
+	background:#1d1d1d ;
+}
+.footer ul li:hover	a{
+	color:#fff;
+}
+
+.footer ul li a{
+	color:#fff;
+	width:42px;
+	height:42px;
+}
+.footer ul li a i{
+	line-height:55px;
+	color:#fff;
+}
+
+.footer p{
+	color:#8c9099;
+	font-size:15px;
+	line-height:24px;
+	font-weight:300;
+	text-align:center;
+}
+.footer p:last-child{
+	padding-bottom:0px;
+}
+.gototop {
+	display:inline-block;
+	width:40px;
+	height:40px;
+	border:2px solid #746c75;
+}
+.gototop i {
+	color:#817a82;
+	line-height:35px;
+}

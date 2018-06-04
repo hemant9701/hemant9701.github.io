@@ -1,0 +1,67 @@
+/*---------------------------------------------------------------------------------
+	 11. Responsive style
+-------------------------------------------------------------------------------*/
+/* @media screen and (max-width: 991px) {
+
+	.bannerText h1{
+		font-size:65px;
+		line-height:71px;
+	}
+	.bannerText h2{
+		font-size:28px;
+	}
+} */
+
+
+
+@media screen and (min-width: 768px) {
+	
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	header{
+		height:50vh;
+	}
+	.bannerText h1 {
+		font-size:32px;
+	}
+	.bannerText h3 {
+		font-size:20px;
+	}
+	.bannerText p {
+		font-size:15px;
+		padding-bottom:20px;
+	}
+	.r-row {
+		flex-flow: column-reverse;
+		text-align: center;
+		text-align: -webkit-center;
+	}
+	.r-row p{
+		text-align: left;
+	}
+	.col{
+		width: 100%;
+	}
+	.aboutus img {
+		margin-bottom: 50px;
+		box-shadow: 10px 15px 50px #cacaca;
+	}
+	.col-container {
+		text-align: center;
+	}
+	.expertiesdesc{
+		border-left: none;
+		padding: 0px;
+	}
+	ul.portfolioContainer li{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.footer ul li{
+		margin: 0 10px 10px;
+	}
+}
