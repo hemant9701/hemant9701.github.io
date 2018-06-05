@@ -1,21 +1,11 @@
 /*---------------------------------------------------------------------------------
 	 11. Responsive style
 -------------------------------------------------------------------------------*/
-/* @media screen and (max-width: 991px) {
 
-	.bannerText h1{
-		font-size:65px;
-		line-height:71px;
+@media screen and (min-width: 768px) and (max-width: 1254px) {
+	.t-logo img {
+		width: 7em;
 	}
-	.bannerText h2{
-		font-size:28px;
-	}
-} */
-
-
-
-@media screen and (min-width: 768px) {
-	
 }
 
 
