@@ -1,0 +1,276 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+	color: #666;
+}
+.fa {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.list-group-item{
+	border-radius: 0;
+}
+.contact-list{	
+	display: block;
+    overflow-y: auto;
+    height: calc(100% - 212px);
+}
+.conversation {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+}
+
+.message {
+  padding: 0;
+  display: block;
+  overflow-y: auto;
+  border: 1px solid #f7f7f7;
+  height: calc(90vh - 8vmin);
+  background: #f8f9fa;
+}
+.message-previous {
+  margin : 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+.previous {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.previous a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.message-body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.message-main-receiver {
+  padding: 10px 20px;
+  max-width: 100%;
+}
+
+.message-main-sender {
+  padding: 10px 20px;
+  max-width: 100%;
+}
+
+.message-text {
+  margin: 0;
+  padding: 5px;
+  word-wrap:break-word;
+  font-weight: 200;
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+.message-time {
+  margin: 0;
+  margin-left: 50px;
+  font-size: 12px;
+  text-align: right;
+  color: #9a9a9a;
+
+}
+
+.receiver {
+  width: auto;
+  margin-right: 5%;
+  padding: 4px 10px 7px;
+  border-radius: 10px 10px 10px 0;
+  background: #fbe4e4;
+  font-size: 12px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.sender {
+  float: right;
+  width: auto;
+  margin-left: 5%;
+  background: #dcf8c6;
+  border-radius: 10px 10px 0 10px;
+  padding: 4px 10px 7px;
+  font-size: 12px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+
+.reply {
+  position: sticky;
+  background-color: #343a40;
+  padding: 2px 0; 
+  z-index: 1000;
+}
+
+.reply-emojis {
+  padding: 5px;
+  text-align: center;
+}
+
+.reply-emojis i {
+  cursor: pointer;
+}
+
+.reply-recording {
+  padding: 5px;
+  text-align: center;
+}
+
+.reply-recording i {
+  cursor: pointer;
+}
+
+.reply-send {
+  padding: 5px;
+  text-align: center;
+}
+
+.reply-send i {
+  cursor: pointer;
+}
+
+.reply-main {
+  padding: 2px 5px;
+}
+
+.reply-main textarea {
+  width: 100%;
+  resize: none;
+  overflow: hidden;
+  padding: 5px;
+  outline: none;
+  border: none;
+  text-indent: 5px;
+  box-shadow: none;
+  height: 100%;
+  font-size: 16px;
+}
+
+.reply-main textarea:focus {
+  outline: none;
+  border: none;
+  text-indent: 5px;
+  box-shadow: none;
+}
+
+.side-two {
+   height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.closebtn{
+	color: #fff;
+	position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.closebtn:hover{
+	text-decoration: none;
+}
+.profile{
+	
+}
+.profile-top{
+	padding: 30px 25px;
+    background: lightseagreen;
+    color: #fff;
+    font-size: 1.5em;
+}
+.profile a{
+	color: #fff;
+}
+.profile-img{
+	text-align: center;
+    padding: 25px;
+}
+.profile-name{
+	padding: 20px 25px;
+    background: #fff;
+    font-size: 1.2em;
+}
+.profile-name .y-n{
+	color: #20b2aa;
+    font-size: 0.7em;
+	display: block;
+}
+.profile-text{
+	padding: 10px 25px;
+    color: #8f8f8f99;
+}
+.wall-text{
+	margin-top: 5vh;
+    color: #8f8f8f;
+    font-size: 0.9em;
+}
+.f-wall{
+	z-index: -9999;
+	text-align: center;
+	margin: 25vh 25vh 10vh;
+}
+.w-f{
+	display: block;
+    border-top: 1px solid;
+    padding-top: 5vh;
+    margin-top: 5vh;
+}
+.dropdown-toggle::after{display:none;}
+.n-icon{
+	display: inline-block;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 50px;
+}
+.n-icon i{
+	color: #212529;
+}
+.notification {
+    background: #9ef1b0;
+    padding: 10px;
+}
+.search-bar{
+	background: #fbfbfb;
+    padding-top: 10px;
+}
+.mb-1{
+	padding-left: 10px;
+}
+span.n-text {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.list-group-item.active {
+    background-color: #343a40;
+    border-color: #343a40;
+}
