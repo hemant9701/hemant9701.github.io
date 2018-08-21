@@ -1,1 +1,1 @@
-# hemant9701.github.io-whatsmyapp
+# hemant9701.github.io/whatsmyapp
