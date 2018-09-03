@@ -1,0 +1,14 @@
+.hide{
+	display: none;
+	margin: auto;
+}
+.form-warp {
+	border: 1px solid #d8d8d8;
+	padding: 10px 15px;
+	border-radius: 5px;
+	background: #f7f7f7;
+	margin: 5% 0;
+}
+#y{
+	width: 100px;
+}
