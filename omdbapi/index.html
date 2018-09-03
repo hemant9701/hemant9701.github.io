@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8" />
+
+	<title>Hemant Kumar - Website Developer</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/javascript.js"></script>
+	<style>
+		.hide{
+			display: none;
+			margin: auto;
+		}
+		.form-warp {
+			border: 1px solid #d8d8d8;
+			padding: 10px 15px;
+			border-radius: 5px;
+			background: #f7f7f7;
+			margin: 5% 0;
+		}
+		#y{
+			width: 100px;
+		}
+	</style>
+</head>
+	<body>
+		<div class="container">
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="form-warp">
+                        <form class="well form-search" id="search-by-title-form" onsubmit="return false;">
+							<fieldset>
+								<legend>By Title</legend>
+							</fieldset>
+							<div class="row">
+								<div class="col-lg-3 col-md-12">
+									<label class="control-label" for="i">ID:</label>
+									<input type="text" id="i" name="i" class="input-small" placeholder="IMDb ID">
+								</div>
+								<div class="col-lg-4 col-md-12">
+									<label class="control-label" for="t">Title:</label>
+									<input type="text" id="t" name="t" class="input-small">
+								</div>
+								<div class="col-lg-3 col-md-12">
+									<label class="control-label" for="y">Year:</label>
+									<input type="text" id="y" name="y" class="input-small">
+								</div>	
+							
+								<div class="col-lg-2 col-md-12">
+									<button id="search-by-title-button" type="button" class="btn-sm btn-primary">Search</button>
+									<button id="search-by-title-reset" type="reset" class="btn-sm">Reset</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="hide col-lg-4" id="search-by-title-request">
+						<div class="card" >
+							<div id="poster"></div>
+							<div class="card-body" id="dataShow"></div>
+						</div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	</body>
+</html>
