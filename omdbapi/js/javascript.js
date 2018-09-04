@@ -24,7 +24,7 @@ let fetchData = () => {
         type: 'GET',
         dataType: 'json',
         async: true,
-        url: 'http://www.omdbapi.com/?apikey=e84540e8&i=' + i + '&y=' + y + '&t=' + t,
+        url: 'https://www.omdbapi.com/?apikey=e84540e8&i=' + i + '&y=' + y + '&t=' + t,
 
         success: (response) => {
 			
