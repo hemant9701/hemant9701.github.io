@@ -17,40 +17,45 @@
 	<body>
 		<div class="container">
 			<div class="row">
-                <div class="col-lg-12">
+				<div class="col-12">
+					<div class="jumbotron">
+					  <div class="container">
+						<h1 class="display-6">Assignment Name - JQuery Ajex</h1>
+					  </div>
+					</div>
+				</div>
+                <div class="col-md-4">
                     <div class="form-warp">
                         <form class="well form-search" id="search-by-title-form" onsubmit="return false;">
 							<fieldset>
 								<legend>By Title</legend>
 							</fieldset>
-							<div class="row">
-								<div class="col-lg-3 col-md-12">
+							
+								<div class="md-12">
 									<label class="control-label" for="i">ID:</label>
 									<input type="text" id="i" name="i" class="input-small" placeholder="IMDb ID">
 								</div>
-								<div class="col-lg-4 col-md-12">
+								<div class="md-12">
 									<label class="control-label" for="t">Title:</label>
 									<input type="text" id="t" name="t" class="input-small">
 								</div>
-								<div class="col-lg-3 col-md-12">
+								<div class="md-12">
 									<label class="control-label" for="y">Year:</label>
 									<input type="text" id="y" name="y" class="input-small">
 								</div>	
 							
-								<div class="col-lg-2 col-md-12">
+								<div class="md-12">
 									<button id="search-by-title-button" type="button" class="btn-sm btn-primary">Search</button>
 									<button id="search-by-title-reset" type="reset" class="btn-sm">Reset</button>
 								</div>
-							</div>
+							
 						</form>
 					</div>
-					<div class="hide col-lg-4" id="search-by-title-request">
-						<div class="card" >
-							<div id="poster"></div>
-							<div class="card-body" id="dataShow"></div>
-						</div>
-                    </div>
+				</div>
+				<div class="hide col" id="search-by-title-request">
+					<div class="card" id="card"></div>
                 </div>
+    
             </div>
 		</div>
 		

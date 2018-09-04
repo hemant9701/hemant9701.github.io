@@ -29,22 +29,34 @@ let fetchData = () => {
         success: (response) => {
 			
 			$('#search-by-title-request').css('display', 'block');
-
-            console.log(response);
-			
 			let dataShow;
-			
-			dataShow = ('<h2>' + response.Title + ' <small>(' + response.Year + ')</small></h2>')
-			dataShow += ('<h4>Director : ' + response.Director + '</h4>')
-			dataShow += ('<h6>Actors : ' + response.Actors + '</h6>')
-			$('#dataShow').html(dataShow);
-			
-			if(response.Poster == null || response.Poster=='N/A'){
-				$('#poster').html('<img src="images/blank_poster.jpg"  id="poster" class="card-img-top"/>');
+            console.log(response);
+			if(response.Title != null || response.imdbID != null){
+				
+				if(response.Poster != null && response.Poster != "N/A"){
+					dataShow = ('<div id="poster">');
+					dataShow += ('<img src="' + response.Poster + '" class="card-img-top"/>');
+					dataShow += ('</div>');
+				}else{
+					dataShow = ('<div id="poster">');
+					dataShow += ('<img src="images/blank_poster.jpg" class=""  width="250px"/>');
+					dataShow += ('</div>');
+				}
+				
+				dataShow += ('<div class="card-body" id="dataShow">');
+				dataShow += ('<h2>' + response.Title + ' <small>(' + response.Year + ')</small></h2>');
+				dataShow += ('<h4>Director : ' + response.Director + '</h4>');
+				dataShow += ('<h6>Actors : ' + response.Actors + '</h6>');
+				dataShow += ('<p>Short story : ' + response.Plot + '</p>');
+				dataShow += ('</div>');
+				
 			}else{
-				$('#poster').html('<img src="' + response.Poster + '"  id="poster" class="card-img-top"/>');
+				dataShow = ('<div id="poster">');
+				dataShow += ('<img src="images/blank_poster.jpg" class="" width="250px"/>');
+				dataShow += ('</div>');
 			}
-
+			$('#card').html(dataShow);
+			
         }, error: (err) => {
 
             console.log(err.responseJSON.error.message);
