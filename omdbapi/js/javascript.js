@@ -15,6 +15,7 @@ $(document).ready(() => {
 	});
 	$('#search-by-title-reset').click(function(){
 		$('#card').empty();
+		$('#search-by-title-request').css('display', 'none');
 	});
 });
 
