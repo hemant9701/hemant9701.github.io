@@ -13,7 +13,9 @@ $(document).ready(() => {
 			fetchData();
 		}
 	});
-	
+	$('#search-by-title-reset').click(function(){
+		$('#card').empty();
+	});
 });
 
 let fetchData = () => {
