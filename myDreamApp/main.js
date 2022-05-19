@@ -484,7 +484,7 @@ var BlogHttpService = /** @class */ (function () {
     };
     // methord to return all the blogs
     BlogHttpService.prototype.getAllBlogs = function () {
-        var myResponse = this._http.get(this.baseUrl + '/all?authToken=' + this.authToken);
+        var myResponse = this._http.get(this.baseUrl + '/list?key=' + this.authToken);
         console.log(myResponse);
         return myResponse;
     };
@@ -495,18 +495,18 @@ var BlogHttpService = /** @class */ (function () {
     }; // end get blog information function
     // methord to create new blog only
     BlogHttpService.prototype.createBlog = function (blogData) {
-        var myResponse = this._http.post(this.baseUrl + '/create?authToken=' + this.authToken, blogData);
+        var myResponse = this._http.post(this.baseUrl + '/create?key=' + this.authToken, blogData);
         return myResponse;
     }; // end create
     // methord to delete blog only
     BlogHttpService.prototype.deleteBlog = function (blogId) {
         var data = {};
-        var myResponse = this._http.post(this.baseUrl + '/' + blogId + '/delete?authToken=' + this.authToken, data);
+        var myResponse = this._http.post(this.baseUrl + '/' + blogId + '/delete?key=' + this.authToken, data);
         return myResponse;
     }; // end delete
     // methord to edit blog only
     BlogHttpService.prototype.editBlog = function (blogId, blogData) {
-        var myResponse = this._http.put(this.baseUrl + '/' + blogId + '/edit?authToken=' + this.authToken, blogData);
+        var myResponse = this._http.put(this.baseUrl + '/' + blogId + '/edit?key=' + this.authToken, blogData);
         return myResponse;
     }; // end edit 
     BlogHttpService = __decorate([
