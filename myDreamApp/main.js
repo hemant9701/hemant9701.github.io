@@ -472,8 +472,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var BlogHttpService = /** @class */ (function () {
     function BlogHttpService(_http) {
         this._http = _http;
-        this.baseUrl = 'https://blogapp.edwisor.com/api/v1/blogs';
-        this.authToken = 'YjQ5ZTA4MmNkMjU5MWI3MzJhOTM0ZTJjZmNhOGJiNGI1NzNhZTYxZGMwMjBkZjJlNThiYmIwMzU1NjM2YmI4ZmUxMDc2ZTQyNmNiZTJjOTk3ZjY3ZWMyZGNkOWU5MTQ5OWJhZmNkZDEzNjYwZWNhZTQzYzNkY2M3NDJiNTQxMmVlYw==';
+        this.baseUrl = 'https://www.googleapis.com/blogger/v3/blogs';
+        this.authToken = 'AIzaSyBqW5YAu2fFUDUGTVGtpJrzOHJ1AmKWr-o';
         console.log("blog-http service was called");
     }
     // exception handler
